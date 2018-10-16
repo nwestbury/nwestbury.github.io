@@ -608,14 +608,14 @@ footer .footer-below {
 .hr-slash .hr-line {
     width: 50%;
     position: relative;
-    margin: 15px;
+    margin-bottom: 7px;
     border-bottom: 3px solid #fff;
 }
 
 .hr-slash .hr-black-line {
     width: 50%;
     position: relative;
-    margin: 15px;
+    margin-bottom: 7px;
     border-bottom: 3px solid #000;
 }
 
@@ -645,4 +645,10 @@ footer .footer-below {
 
 .w-250 {
     width: 250px;
+}
+
+@media (max-width: 575px) {
+    .phone-margin-10 {
+        margin-bottom: 10px;
+    }
 }
