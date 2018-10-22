@@ -442,8 +442,6 @@ section.success a.active {
     margin: 0;
     font-size: .85em;
     line-height: 1.764705882em;
-    vertical-align: middle;
-    vertical-align: baseline;
     opacity: 0;
     -webkit-transition: top .3s ease,opacity .3s ease;
     -moz-transition: top .3s ease,opacity .3s ease;
@@ -652,55 +650,54 @@ footer .footer-below {
     position: relative;
 }
 
+.flex-container {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex-vcenter {
+    display: flex;
+    align-items: flex-end;
+}
+
+.flex-1 {
+    flex: 1 2 auto;
+    width: 100%;
+}
+
+.flex-5 {
+    flex: 5;
+    width: 100%;
+}
+
+.profilePic {
+    background-image: url('../img/profile.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.intro-text {
+    width: 100%;
+}
+
 @media (max-width: 575px) {
     .phone-margin-10 {
         margin-bottom: 10px;
     }
 }
 
-@media(max-height: 685px) {
-    .header-profile {
+@media(max-height: 500px) {
+    .profilePic {
         display: none;
     }
 
-    .main-text {
-        position: absolute;
-        top: 30%;
-        left: 0;
-        right: 0;
-    }
-}
-
-@media (max-width: 1624px) and (min-width: 1200px) {
-    .offset-xl-3half {
-        margin-left: 29.16666667%;
-    }
-}
-
-@media (min-width: 1625px) {
-    .col-xxl-4 {
-        float: left;
-        width: 33.333333%;
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 33.33333%;
-        flex: 0 0 33.33333%;
-        max-width: 33.33333%;
-    }
-    .offset-xxl-4 {
-        margin-left: 33.333333%;
-    }
-}
-
-@media(max-height: 850px) and (min-width: 1625px){
-    .col-xxl-4 {
-        float: left;
-        width: 33.333333%;
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 33.33333%;
-        flex: 0 0 33.33333%;
-        max-width: 33.33333%;
-    }
-    .offset-xxl-4 {
-        margin-left: 33.333333%;
+    .flex-vcenter {
+        display: flex;
+        align-items: center;
     }
 }
